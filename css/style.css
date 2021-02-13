@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(238, 183, 183);
+}
+
+header {
+    background: #ffe057;
+    color: #3d3d3d;
+    min-height: 120px;
+    border-bottom: #201e05 3px solid;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+header a {
+    color: #383838;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+header li {
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover {
+    color: #f09090;
+    font-weight: bold;
+}
+
+.highlight h1 {
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.showcase {
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    color: #353535;
+}
+
+.showcase p {
+    font-size: 20px;
+    color: #2b2b2b;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #2b2b2b;
+    background-color: #fbfd82;
+    text-align: right;
+}
+
+@media screen and (max-width: 992px) {
+    .showcase img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .showcase img {
+        max-width: 200px;
+    }
+    .showcase h1 {
+        font-size: 15px;
+    }
+
+    header a {
+        font-size: 10px;
+    }
+
+    header li {
+        padding: 0 5px 0 5px;
+    }
+
+    header nav {
+        float: center;
+    }
+}

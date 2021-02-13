@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bureksada.css">
+    <script defer src="../js/script.js"></script>
+    <title>Uvek Burek</title>
+    <link rel="icon" href="../images/burek.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="highlight">
+            <a href="../index.html">
+                <h1>UVEK BUREK</h1>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../burekotvornica/index.html">Proizvodi</a></li>
+                <li class="current"><a href="../burek-sada/index.html">Naruči</a></li>
+                <li><a href="../rebusi/index.html">Rebusi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="showcase">
+        <h1><b>Od pećnice do praga</b></h1>
+        <p>
+            Ako vas je uhvatila glad samim ulaskom na našu stranicu, ne časite ni časa, već naručite burek na vašu
+            adresu. Naš ažurni biciklista raznosač(Čika Mile) će biti ispred vaših vrata dok ste rekli Popokatepetl.
+        </p>
+        <p>
+            U našoj raznovrsnoj ponudi možete naći burek sa čim god poželite, dokle god ste poželeli da je sa mesom. Iz
+            ponude izdvajamo:
+        <ul>
+            <li>Četvrtinu bureka</li>
+            <li>Polovinu bureka</li>
+            <li>Tri četvrtine bureka</li>
+            <li>Ceo burek</li>
+            <li>Koliko god četvrtina mislite da možete trenutno da pojedete</li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="centar">
+        <h1><b>BUREK ODMAH</b></h1>
+        <p>
+        <div id="error"></div>
+        <form action="/" id="form" method="GET">
+
+            <div class="podaci">
+                Adresa <div class="adresa"> <input type="text" id="adresa" name="fadresa"> </div> <br>
+                Kontakt telefon <div class="konTel"> <input type="number" id="telefon" name="ftelefon"> </div> <br>
+                Broj četvrtina bureka <div class="bcb"> <input type="number" id="brojCetvrtina" name="fbcb"></div> <br>
+            </div>
+            <p><i>Sadržaj bureka</i></p>
+            <div class="centar2">
+                <ul>
+                    <li>Pravljen na masti <input type="radio" name="radio1" id="mast" value="mast"></li>
+                    <li>Pravljen na ulju <input type="radio" name="radio1" id="ulje" value="ulje"></li>
+                    <li><label for="meso">Kolicina mesa</label>
+                        <select name="meso" id="meso">
+                            <option value="srednje">Srednje</option>
+                            <option value="malo">Malo</option>
+                            <option value="mnogo">Mnogo</option>
+                        </select></li>
+                    <li>Jogurt <input type="checkbox" name="fjogurt" value="jogurt"> </li> <br>
+                </ul>
+            </div>
+
+            <button type="submit">Odma' dođe</button>
+        </form>
+        </p>
+    </div>
+    <footer>
+        <p>Uvek Burek, Krompirajt &copy; 2020</p>
+        <p>Datum: <span id="datetime"></span></p>
+        <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+        </script>
+    </footer>
+</body>
+
+</html>
